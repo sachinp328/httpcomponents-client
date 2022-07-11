@@ -2,12 +2,12 @@
 ###2 FIRSTLY - You need to specify which testing framework you are using. Currently supported JS frameworks are : mocha, jest and jasmine.
 # framework: junit # mocha # framework should be as per your project
 version: 2
-preMerge :    
+preMerge :  
+  preRun: 
+    command:
+      - mvn compile
+      - mvn test-compile
   subModules:
-    preRun: 
-      command:
-        - mvn compile
-        - mvn test-compile
     - name: httpclient5
       path : "./httpclient5"
       pattern: 
