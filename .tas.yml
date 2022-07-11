@@ -34,6 +34,10 @@ preMerge :
            - mvn test-compile
 
 postMerge:
+  preRun:
+    command:
+      - mvn compile
+      - mvn test-compile
   subModules:
 #     - name: httpclient5
 #       path : "./httpclient5"
