@@ -3,7 +3,7 @@
 # framework: junit # mocha # framework should be as per your project
 version: 2
 preMerge :    
-  submodules:
+  subModules:
     - name: httpclient5-cache
       path : "./httpclient5-cache"
       pattern: 
