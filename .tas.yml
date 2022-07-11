@@ -20,8 +20,8 @@ preMerge :
         command:
            - mvn compile
            - mvn test-compile
-    - name: httpclient5-win
-      path : "./httpclient5-win"
+    - name: httpclient5-cache
+      path : "./httpclient5-cache"
       pattern: 
          - "**test/**/*.java"
       framework : junit
@@ -47,8 +47,8 @@ postMerge:
         command:
            - mvn compile
            - mvn test-compile
-    - name: httpclient5-win
-      path : "./httpclient5-win"
+    - name: httpclient5-cache
+      path : "./httpclient5-cache"
       pattern: 
          - "**test/**/*.java"
       framework : junit
