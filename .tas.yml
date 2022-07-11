@@ -4,8 +4,8 @@
 version: 2
 preMerge :    
   subModules:
-    - name: httpclient5-cache
-      path : "./httpclient5-cache"
+    - name: httpclient5
+      path : "./httpclient5"
       pattern: 
          - "**test/**/*.java"
       framework : junit
@@ -19,8 +19,8 @@ preMerge :
 
 postMerge:
   subModules:
-    - name: httpclient5-cache
-      path : "./httpclient5-cache"
+    - name: httpclient5
+      path : "./httpclient5"
       pattern: 
          - "**test/**/*.java"
       framework : junit
