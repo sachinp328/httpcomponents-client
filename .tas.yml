@@ -8,18 +8,18 @@ preMerge :
       - mvn compile
       - mvn test-compile
   subModules:
-#     - name: httpclient5
-#       path : "./httpclient5"
-#       pattern: 
-#          - "**test/**/*.java"
-#       framework : junit
-#       frameworkVersion: 5
-#       runPreRunEveryTime: false # if set to true it will run pre steps on test execution as well
-#       preRun: 
-#         runEveryTime: false # if set to true it will run on test execution as well
-#         command:
-#            - mvn compile
-#            - mvn test-compile
+    - name: httpclient5
+      path : "./httpclient5"
+      pattern: 
+         - "**test/**/*.java"
+      framework : junit
+      frameworkVersion: 5
+      runPreRunEveryTime: false # if set to true it will run pre steps on test execution as well
+      preRun: 
+        runEveryTime: false # if set to true it will run on test execution as well
+        command:
+           - mvn compile
+           - mvn test-compile
     - name: httpclient5-fluent
       path : "./httpclient5-fluent"
       pattern: 
@@ -39,18 +39,18 @@ postMerge:
       - mvn compile
       - mvn test-compile
   subModules:
-#     - name: httpclient5
-#       path : "./httpclient5"
-#       pattern: 
-#          - "**test/**/*.java"
-#       framework : junit
-#       frameworkVersion: 5
-#       runPreRunEveryTime: false # if set to true it will run pre steps on test execution as well
-#       preRun: 
-#         runEveryTime: false # if set to true it will run on test execution as well
-#         command:
-#            - mvn compile
-#            - mvn test-compile
+    - name: httpclient5
+      path : "./httpclient5"
+      pattern: 
+         - "**test/**/*.java"
+      framework : junit
+      frameworkVersion: 5
+      runPreRunEveryTime: false # if set to true it will run pre steps on test execution as well
+      preRun: 
+        runEveryTime: false # if set to true it will run on test execution as well
+        command:
+           - mvn compile
+           - mvn test-compile
     - name: httpclient5-fluent
       path : "./httpclient5-fluent"
       pattern: 
