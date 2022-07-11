@@ -4,6 +4,11 @@
 version: 2
 preMerge :    
   subModules:
+    preRun: 
+#         runEveryTime: false # if set to true it will run on test execution as well
+        command:
+           - mvn compile
+           - mvn test-compile
     - name: httpclient5
       path : "./httpclient5"
       pattern: 
