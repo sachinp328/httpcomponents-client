@@ -17,7 +17,20 @@ preMerge :
            - mvn compile
            - mvn test-compile
 
-# postMerge:
+postMerge:
+  subModules:
+    - name: httpclient5-cache
+      path : "./httpclient5-cache"
+      pattern: 
+         - "**test/**/*.java"
+      framework : junit
+      frameworkVersion: 5
+      runPreRunEveryTime: false # if set to true it will run pre steps on test execution as well
+      preRun: 
+        runEveryTime: false # if set to true it will run on test execution as well
+        command:
+           - mvn compile
+           - mvn test-compile
 #   # THIRDLY - You need to set postMerge patterns.
 #   # These would be the glob patterns for the test cases that you want to execute in the post-merge jobs. A postMerge test execution job is initiated whenever a PR is merged into a branch.
 #   preRun:
